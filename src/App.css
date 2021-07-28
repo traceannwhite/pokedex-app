@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
-}
+/* header */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  border-bottom: 5px solid black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav a {
+  text-decoration: none;
+}
+.nav .Pokemon {
+  width: 20%;
+  height: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* main */
+
+body {
+  background-image: url(https://res.cloudinary.com/radiscipio/image/upload/v1566938615/ldk7yfspcamsinxsvd1r.jpg);
+  background-size: cover;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.pokedex {
+  margin: 30px;
+}
+
+/* footer */
+
+.claim {
+  border-top: 5px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background: white;
 }
